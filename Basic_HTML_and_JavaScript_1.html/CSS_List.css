@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.a{ list-style-type:circle;}
+ul.b{ list-style-type:square;}
+ol.c{ list-style-type:uper-roman;}
+ol.d{ list-style-type:lower-alpha;}
+</style>
+</head>
+<body>
+
+<h2>Lists</h2>
+<p> Unordered Lists</p>
+<ul class="a">
+<li>Limes</li>
+<li>Dates</li>
+<li>Yougurth</li>
+</ul>
+
+<ul class="b">
+<li>Meet</li>
+<li>Avocado</li>
+<li>Onions</li>
+</ul>
+
+<p> Ordered Lists</p>
+<ol class="c">
+<li>Cabage</li>
+<li>Sausage</li>
+<li>Candy</li>
+</ol>
+
+<ol class="d">
+<li>Bacon</li>
+<li>Jalapenos</li>
+<li>Kambacha</li>
+</ol>
+
+</body>
+</html>
