@@ -1,0 +1,9 @@
+font-family: "Helvetica, sans-serif"
+font-size: "18pt"
+
+.input{
+    width:400px;
+    margin: 5px;
+    border:2px solid navy blue;
+    border-radius:30%
+}
