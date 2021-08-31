@@ -1,5 +1,7 @@
-font-family: "Helvetica, sans-serif"
-font-size: "18pt"
+font-family { "Helvetica, sans-serif";
+
+font-size:"18pt";
+}
 
 input{
     width:400px;
