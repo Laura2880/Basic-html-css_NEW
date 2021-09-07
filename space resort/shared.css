@@ -150,7 +150,7 @@ section{
 home section styles
 ==========================================*/
 #home{
-    background: url(../Thumb/planets.jpg) no-repeat 50% 50%;
+    background: url(./Thumb/planets.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -169,7 +169,7 @@ home section styles
     font-variant: small-caps;
     color: #fff;
     letter-spacing: 5pt;
-    word-spacing: 5pt;
+    word-spacing: 21pt;
     font-size: 4.5em;
     text-align: left;
     font-family: impact,sans-serif;
@@ -187,8 +187,8 @@ home section styles
 }
 
 .head-last{
-    font-size: 23px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 900;
     padding: 5px 20px 20px 20px;
     border: 1px dotted #fff;
     padding: 5px;
@@ -275,7 +275,7 @@ width: 80%;
 border-top: 1px solid #090b0d;
 border-right: 2px solid #424549;
 border-bottom: 2px solid #424549;
-border-left: 1px solid #090b;
+border-left: 1px solid #090b0d;
 margin: 10px lem;
 border-radius: 7px;
 background: #13161b;
@@ -359,7 +359,7 @@ footer style
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     .container{
         width: 750px
     }
