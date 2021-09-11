@@ -1,6 +1,7 @@
 /*============================
 menu section animation
 ================================*/
+
 .menu{
     color: #f00;
     font: bold 12px/18px sans-serif;
@@ -24,7 +25,7 @@ menu section animation
     border-radius: 6px;
     /*background-color: #052136:*/
     cursor:pointer;
-    transition-property:background;
+    transition-property: background;
     transition-duration:.4s;
     transition-delay: 0s;
     transition-timing-function: ease-in-out;

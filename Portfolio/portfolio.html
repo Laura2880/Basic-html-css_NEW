@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <!-----------Head-->
+    <head>
+        <meta charset="UTF-8">
+        <met name="viewport" content="width=device-width" />
+        <title>Ana Laura Quesada Garcia</title>
+        <link rel="stylesheet" type="text/css" href="./portfolio_CSS/Untitled-1.css">
+    </head>
+
+    <!------------Body-->
+    <body class="Background">
+
+        <!-----------Navar-->
+        <div class="Navar">
+            <a class="active" href="#Home">Home</a>
+            <a class="active" href="#About">About</a>
+            <a class="active" href="#Github">Github</a>
+            <a class="active" href="#Contact">Contact</a>
+        </div>
+        <!------------------Background Video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./V&P/videoplayback.mp4" type="video/mp4">
+                <!--------Display message if video fails to run-->
+                Your brouser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!---------Video text-->
+        <div class="video_text">
+            <h1 color="Red">Ana Laura Quesada Garcia's Portfolio</h1>
+            <strong>
+                <p> <h2 class="white-text" color="white">
+                    <p>Technology, like art,</p>
+                    <p>Is a soaring exercise of the humnan imagination.</p>
+                </q>
+                <p class="--right" color="white-text">-Daniel Bell </p>
+                <br>
+                <br>My name is Ana Laura. Welcome to my portfoliowebsite. On it, I 
+                will tell you about my background and experiance.
+                <br>
+                <br> Thank you for stopping by and enjouy!</h2>
+                </p>
+            </strong>
+        </div>
+        <!-----------About section-->
+        <div class="row" id="About">
+            <!---------Left column-->
+            <div class="Column_2">
+                <img src="./V&P/u8.jpg" alt="Computing">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a Syber Security student who loves learning about coding! I love nature and animals
+                    and I have three kittens and two puppies.
+                    <br>
+                    <br>I am Student of <a
+                    href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s 
+                    cyber Security Boot Camp, and currently training and getting experiance in the following web and
+                     programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+                     <br>
+                     <br>I will become a full-stack Cyber Security Agent and would love to work with you on 
+                     on your project.<a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!----------Github section-->
+        <div class="row" id="Github">
+            <!----------Left column-->
+            <div class="Column_1">
+                <h1>Github</h1>
+                <p>
+                    You can view my coding projects on my Github profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Laura2880">My Github</a></p>
+                </p>
+            </div>
+            <!------------Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" target="_blank">
+                    <img src="./V&P/git.png" alt ="github logo"></a>
+            </div>
+        </div>
+        <!-----------contact secion-->
+        <div class="row" id="Contact">
+            <!-------------contct image, left column-->
+            <div class="column_2 column_tall">
+                <h1>Contact</h1>
+                <!-----------This specifies where and how to send the form data;-->
+                <form action="" method ="POST"><!--------Here we utilizing a 3rd party
+                service to submit the contact form data, insert your formspree endpoint in the
+            action attribute---------->
+     <lable>Email:</lable>
+            <input type="text" id="Email" name="Email"
+            placeholder="Please enter your email here">
+            <lable>Message:</lable>
+            <input type="text" id="Message" name="Message"
+            placeholder="Please writr your Message here">
+            <input type="submit" value="SUBMIT">
+        </form>
+            </div>
+        </div>
+        <!-----------Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc,. <a href="https://www,learncodinganywhere.com/"
+                target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
