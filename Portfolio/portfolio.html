@@ -6,6 +6,7 @@
         <met name="viewport" content="width=device-width" />
         <title>Ana Laura Quesada Garcia</title>
         <link rel="stylesheet" type="text/css" href="./portfolio_CSS/Untitled-1.css">
+        <script src="./portfolio_JS/portfolio.js"></script>
     </head>
 
     <!------------Body-->
@@ -14,10 +15,15 @@
         <!-----------Navar-->
         <div class="Navar">
             <a class="active" href="#Home">Home</a>
+            <!------!New section  added------>
+            <a href =" #Slideshow">Slideshow</a>
             <a class="active" href="#About">About</a>
             <a class="active" href="#Github">Github</a>
-            <a class="active" href="#Contact">Contact</a>
+            <!--ONCLICK and ondblclick functions added to open and close the 
+contact form-->
+            <a onclick="openform()" ondblclick="closeForm()">Contact</a>
         </div>
+
         <!------------------Background Video-->
         <div id="Home">
             <video autoplay muted loop id="Typing_Video">
@@ -44,18 +50,88 @@
                 </p>
             </strong>
         </div>
+        <!--slideshow section added-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+
+                    <!--Slide 1 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./IMG_2938 (13).JPG" alt="Picture of me"
+                        width="200" height="300">
+                        <div class="text">I'm available to assist you on your
+                         project !</div>
+                    </div>
+
+                    <!---Slide 2 of 6-->
+                    <div class= "mySlides" fade>
+                        <img class="Slideshow_Images" src="./do-html-css-java.jpg" alt ="HTML, CSS and JS logos"
+                        width="1000" height="1200"  >
+                        <div class="text">I am a Cyber Security student, <br> 
+                            trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+
+                    <!---------Slide 3 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./1ptn.png" alt="Pyton logo"
+                        width="1000" height="1200"   >
+                        <div class="text">The popular programming Language Pyton,</div>
+                    </div>
+                    
+                    <!---------Slide 4 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./ch.png" alt="C# logo"
+                        width="600" height="600" >
+                        <div class="text">.NET Framework, ASP.NET, MVC,</div>
+                    </div>
+
+                    <!---------Slide 5 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./SQL.png" alt="SQL logo"
+                        width="500" height="250" >
+                        <div class="text">Back end development, database and SQL,</div>
+                    </div>
+
+                    <!---------Slide 6 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./woman-engineer-laptop-coding-data-center-silhouette.jpg" alt="Woman Coding"
+                        width="1000" height="1200"  >
+                        <div class="text"><a class="white -text" onclick="openform()"
+                            herf="#Contact">Contact me!</a></div>
+                    </div>
+
+                    <!------Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br> <!----Adds a space between the slideshow images and the dots-->
+
+            <!---------Slideshow dots (these are another way for userrs to navigate
+                through the website)-->
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>   
+                </div>
+            </div>
+        </div>
+
         <!-----------About section-->
         <div class="row" id="About">
             <!---------Left column-->
             <div class="Column_2">
-                <img src="./V&P/u8.jpg" alt="Computing">
+                <img src="./V&P/u8.jpg" alt="Computing"
+                width="500" height="600"  >
             </div>
             <!--Right column-->
             <div class="Column_1">
                 <h1>About</h1>
                 <p>
-                    I am a Syber Security student who loves learning about coding! I love nature and animals
-                    and I have three kittens and two puppies.
+                    I am a Syber Security student who loves learning about Information Technology! I love nature and animals
+                    , reading, writing, and watching Horror Films.
                     <br>
                     <br>I am Student of <a
                     href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s 
@@ -79,31 +155,44 @@
                     <p class="center"><a href="https://github.com/Laura2880">My Github</a></p>
                 </p>
             </div>
+
             <!------------Right column-->
             <div class="Column_2">
                 <a href="https://github.com/the-tech-academy" target="_blank">
-                    <img src="./V&P/git.png" alt ="github logo"></a>
+                    <img src="./V&P/git.png" alt ="github logo"
+                    width="500" height="600"  ></a>
             </div>
         </div>
-        <!-----------contact secion-->
-        <div class="row" id="Contact">
-            <!-------------contct image, left column-->
-            <div class="column_2 column_tall">
-                <h1>Contact</h1>
-                <!-----------This specifies where and how to send the form data;-->
-                <form action="" method ="POST"><!--------Here we utilizing a 3rd party
-                service to submit the contact form data, insert your formspree endpoint in the
-            action attribute---------->
-     <lable>Email:</lable>
-            <input type="text" id="Email" name="Email"
-            placeholder="Please enter your email here">
-            <lable>Message:</lable>
-            <input type="text" id="Message" name="Message"
-            placeholder="Please writr your Message here">
-            <input type="submit" value="SUBMIT">
-        </form>
-            </div>
+
+        <!-----------contact form-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com"
+                method="POST" class="form-container">
+            <!-------Here we are using a free online service from httpd://formspree.io/to send 
+            our conact form to an email address of our choosing - note: it will not run unless live on the
+             internet, you have to push it to your online website-->
+                        <h1>Conact</h1>
+                        <lable for="name"><b>Name</b></lable>
+                            <input type="text" placeholder="Type your Name here" 
+name="name" required>
+                    <lable for="phone"><b>Phone</b></lable>
+                            <input type="text" placeholder="Type your Phone Number here"
+name="phone" required>
+                    <lable for="email"><b>Email</b></lable>
+                            <input type="text" placeholder="Type your Email here" 
+name="email" required>
+                    <lable for="message"><b>Message </b></lable>
+                            <input type="text" placeholder="Type your Message here" 
+ name="message" required>
+
+                <button type="Submit" class="button">SUBMIT</button>
+                <button Type ="Button" class="button cancel" onclick="closeForm()">CLOSE</button>
+            </form>
         </div>
+    </div>
+    
         <!-----------Footer section-->
         <footer>
             <p>
